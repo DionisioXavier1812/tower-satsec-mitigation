@@ -1,60 +1,101 @@
-﻿# Tower & Satellite Security Mitigation
+# Tower-SatSec Mitigation
 
-[![Status](https://img.shields.io/badge/status-active-green)]()
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
-[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
+Projeto focado em seguranca, monitoramento e resposta a incidentes em ambientes de telecom com torres de transmissao e enlaces satelitais.
 
-Projeto focado em **mapeamento e mitigaA§A£o de vulnerabilidades** em torres de transmissA£o e enlaces satelitais.
+Ele combina:
 
-## Objetivos
-
-- Documentar riscos fA­sicos e lA³gicos em infraestruturas crA­ticas.
-- Oferecer checklists de avaliaA§A£o de seguranA§a.
-- Disponibilizar scripts simples para apoio A  auditoria de serviA§os e portas.
-- Servir como base para estudos, provas de conceito e melhoria contA­nua.
-
-## Estrutura
-
-- docs/ a€“ documentaA§A£o tA©cnica (arquitetura, modelo de ameaA§a).
-- checklists/ a€“ listas de verificaA§A£o para inspeA§A£o fA­sica e lA³gica.
-- scripts/ a€“ scripts em shell para apoio A  anA¡lise bA¡sica.
-- examples/ a€“ cenA¡rios de uso e estudos de caso.
-
-## Roadmap
-
-- [x] Estrutura inicial do projeto
-- [x] DocumentaA§A£o bA¡sica de arquitetura
-- [x] Checklists fA­sicos e lA³gicos
-- [x] Scripts de auditoria bA¡sica
-- [ ] IntegraA§A£o com ferramentas de monitoramento
-- [ ] Modelos avanA§ados de ameaA§a
-- [ ] Casos de uso reais (ISPs, provedores regionais)
-
-## Releases
-
-- 0.1.0 a€“ Estrutura inicial, documentaA§A£o bA¡sica, scripts simples.
-- 0.2.0 a€“ AmpliaA§A£o de checklists e threat model.
-- 0.3.0 a€“ IntegraA§A£o com ferramentas externas (futuro).
+- Documentacao tecnica (arquitetura, threat model, fluxos)
+- Checklists operacionais
+- Playbooks de resposta
+- Relatorios de incidente
+- Analise DFIR
+- Automacao via scripts PowerShell
 
 ---
 
-## English Version
+## Arquitetura – Visao Geral
 
-This project focuses on **mapping and mitigating vulnerabilities** in transmission towers and satellite links.
+A arquitetura alvo e composta por:
 
-### Goals
+- **Torres de transmissao** (infraestrutura fisica, energia, acesso fisico)
+- **Enlaces satelitais** (modem SAT, antena, satelite, estacao terrestre)
+- **Rede local** (switch, roteador, VLAN, SNMP, SSH)
+- **NOC/SOC** (monitoramento, alertas, Sigma, resposta a incidentes)
 
-- Document physical and logical risks in critical infrastructure.
-- Provide security assessment checklists.
-- Offer simple scripts to support basic service and port auditing.
-- Serve as a foundation for studies, proof-of-concept, and continuous improvement.
+Diagrama ASCII detalhado em:
 
-### Structure
+- `docs/diagrama_arquitetura_satelital.md`
+- `docs/diagrama_cadeia_comunicacao.md`
 
-- docs/ a€“ technical documentation (architecture, threat model).
-- checklists/ a€“ verification lists for physical and logical inspection.
-- scripts/ a€“ shell scripts for basic analysis.
-- examples/ a€“ usage scenarios and case studies.
+---
 
-> This project is **educational** and does not replace professional audits, regulatory standards, or formal technical reports.
+## Fluxo de auditoria e monitoramento
 
+O projeto assume um fluxo de auditoria continuo, incluindo:
+
+1. **Coleta de logs**
+   - Modem SAT (SNR, RSSI, temperatura, status de enlace)
+   - Switch/roteador (SNMP, SSH, eventos de porta)
+   - Sensores fisicos (acesso a torre, portao, energia)
+
+2. **Correlacao de eventos**
+   - Regras Sigma (SSH brute force, SNMP scan, modem sem resposta)
+   - Alertas de horario indevido (acesso fisico fora da janela permitida)
+   - Degradacao de enlace (queda de SNR, perda de pacotes)
+
+3. **Auditoria**
+   - Revisao periodica de configuracoes (SNMP, SSH, senhas, chaves)
+   - Validacao de trilhas de auditoria (logs completos, timestamps, integridade)
+   - Gaps identificados documentados em relatorios de incidente
+
+Fluxos exemplificados em:
+
+- `docs/fluxos_ataque.md`
+- `examples/fluxo_investigacao.md`
+
+---
+
+## Cenarios reais – Exemplos
+
+Alguns cenarios modelados no projeto:
+
+- **Perda de enlace satelital por falha ambiental**
+  - Temperatura elevada no modem
+  - Degradacao progressiva de SNR
+  - Perda total de comunicacao
+  - Playbook: `playbooks/playbook_perda_enlace.md`
+  - Relatorio: `incident-reports/caso_completo_end_to_end.md`
+
+- **Intrusao fisica em torre**
+  - Sensor de portao dispara fora do horario
+  - Log de acesso fisico sem autorizacao
+  - Possivel sabotagem de energia
+  - Diagramas: `examples/diagramas_incidentes.md`
+
+- **Ataque logico via SSH/SNMP**
+  - Scan de portas
+  - Tentativas de brute force em SSH
+  - SNMP aberto com comunidade fraca
+  - Sigma: `examples/logs_sigma.md`, `sigma-events/alertas_sigma.md`
+
+---
+
+## Scripts – Como usar
+
+O projeto inclui uma pequena “pipeline” em PowerShell para automatizar tarefas:
+
+### 1. Conversao para ASCII + Ingles
+
+Script:
+
+- `converter_ascii_english_ultra.ps1`
+
+Funcao:
+
+- Cria versoes sem acentos (ASCII) dos arquivos `.md`
+- Cria versoes em ingles em `english-version/`
+
+Uso:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
