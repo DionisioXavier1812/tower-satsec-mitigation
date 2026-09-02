@@ -1,65 +1,87 @@
-# Tower-SatSec Mitigation
+<div align="center">
 
-Projeto focado em segurança, monitoramento e resposta a incidentes em ambientes de telecom com torres de transmissão e enlaces satelitais.
+# 🚀 Tower-SatSec Mitigation
 
-Ele combina:
+### 🔧 Ferramentas Rápidas
 
-- Documentação técnica (arquitetura, threat model, fluxos)
-- Checklists operacionais
-- Playbooks de resposta
-- Relatórios de incidente
-- Análise DFIR
-- Automação via scripts PowerShell
+| Função | Botão |
+|-------|-------|
+| Gerar versões ASCII + Inglês | <kbd style="background:#4CAF50;color:white;padding:6px 12px;border-radius:6px;">converter_ascii_english_ultra.ps1</kbd> |
+| Criar diagramas + READMEs | <kbd style="background:#2196F3;color:white;padding:6px 12px;border-radius:6px;">montar_diagramas_readmes.ps1</kbd> |
+| Pipeline completa (1 comando) | <kbd style="background:#9C27B0;color:white;padding:6px 12px;border-radius:6px;">tudo_automatico.ps1</kbd> |
+
+</div>
 
 ---
 
-## Arquitetura – Visão Geral
+## 📡 Visão Geral
 
-A arquitetura alvo é composta por:
+Este repositório reúne documentação, automações e modelos de segurança voltados para ambientes de telecom:
 
-- Torres de transmissão (infraestrutura física, energia, acesso físico)
-- Enlaces satelitais (modem SAT, antena, satélite, estação terrestre)
-- Rede local (switch, roteador, VLAN, SNMP, SSH)
-- NOC/SOC (monitoramento, alertas, Sigma, resposta a incidentes)
+- Torres de transmissão  
+- Enlaces satelitais  
+- Modems SAT  
+- Switches e roteadores  
+- NOC/SOC  
+- Fluxos de auditoria  
+- Playbooks de resposta  
+- Relatórios de incidente  
+- Análises DFIR  
 
-Diagramas ASCII detalhados em:
+---
+
+## 🛰️ Arquitetura
+
+Diagramas ASCII completos:
 
 - `docs/diagrama_arquitetura_satelital.md`
 - `docs/diagrama_cadeia_comunicacao.md`
 
+Eles representam:
+
+- Satélite → Antena → Modem SAT → Switch → Rede local → NOC/SOC  
+- Cadeia de telemetria  
+- Fluxo de comunicação bidirecional  
+- Pontos de falha e superfícies de ataque  
+
 ---
 
-## Fluxo de auditoria e monitoramento
+## 🔥 Fluxo de Auditoria
 
-O projeto assume um fluxo de auditoria contínuo, incluindo:
+O projeto segue um fluxo de auditoria contínuo:
 
-1. Coleta de logs  
-2. Correlação de eventos  
-3. Auditoria periódica  
+1. Coleta de logs (modem, switch, sensores físicos)  
+2. Correlação (Sigma, SNMP, SSH, eventos ambientais)  
+3. Auditoria de configuração  
 4. Identificação de gaps  
-5. Geração de relatórios
+5. Relatórios de incidente  
 
-Fluxos exemplificados em:
+Fluxos detalhados em:
 
 - `docs/fluxos_ataque.md`
 - `examples/fluxo_investigacao.md`
 
 ---
 
-## Cenários reais – Exemplos
+## ⚠️ Cenários Reais
 
-Alguns cenários modelados no projeto:
+Modelos incluídos:
 
-- Perda de enlace satelital por falha ambiental  
+- Perda de enlace por temperatura  
 - Intrusão física em torre  
 - Ataque lógico via SSH/SNMP  
+- Sabotagem de energia  
+- Degradação progressiva de SNR  
+
+Casos completos:
+
+- `incident-reports/caso_completo_end_to_end.md`
 
 ---
 
-## Scripts – Como usar
+## 🧰 Scripts – Como usar
 
-### 1. Conversão para ASCII + Inglês
+### 🔹 1. Converter ASCII + Inglês
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
-
