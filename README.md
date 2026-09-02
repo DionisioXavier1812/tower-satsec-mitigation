@@ -1,135 +1,59 @@
-# Tower & Satellite Security Mitigation — Technical Advanced Overview
+# Tower & Satellite Security Mitigation
 
 [![Status](https://img.shields.io/badge/status-active-green)]()
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
 
-Documento técnico avançado sobre riscos, arquitetura, ameaças e processos de mitigação em torres de transmissão e enlaces satelitais.
+Este projeto reúne **boas práticas, checklists e documentação essencial** para segurança em torres de transmissão e enlaces satelitais.
+
+A proposta é ser **simples, acessível e útil** tanto para iniciantes quanto para profissionais de telecom e segurança.
 
 ---
 
-## Arquitetura Técnica
+## 🎯 Objetivo do Projeto
 
-### Camada Física
-- Antenas (parabólicas, painéis setoriais)
-- Cabos coaxiais / waveguides
-- Estrutura da torre (altura, acesso, proteção perimetral)
-- Sensores ambientais (temperatura, vibração, porta)
+- Mapear riscos físicos e lógicos em infraestruturas críticas.  
+- Fornecer checklists práticos para inspeção e auditoria.  
+- Disponibilizar scripts simples para análise básica.  
+- Servir como base de estudo e referência rápida.  
 
-### Camada de Enlace Satelital
-- Modem SAT (SNR, RSSI, BER, telemetria)
-- Protocolos TDMA/SCPC
-- Downlink/Uplink
-- Estação terrestre (gateway)
-
-### Camada de Rede
-- Switches (VLAN, SNMP, STP)
-- Roteadores (ACL, BGP, OSPF)
-- Monitoramento (Syslog, Netflow)
-- Acesso remoto (SSH, VPN)
-
-### Camada de Monitoramento
-- NOC (operacional)
-- SOC (segurança)
-- Regras Sigma
-- Alertas correlacionados
-
-Diagramas completos em:
-- `docs/diagrama_arquitetura_satelital.md`
-- `docs/diagrama_cadeia_comunicacao.md`
+Este repositório **não substitui auditorias profissionais**, mas ajuda a organizar conhecimento e padronizar processos.
 
 ---
 
-## Threat Model Avançado
+## 📁 Estrutura do Repositório
 
-### Superfície de Ataque
-- SSH exposto
-- SNMP público
-- Modem SAT sem hardening
-- Acesso físico à torre
-- Telemetria sem autenticação
-- Falhas ambientais
+- `docs/` – documentação técnica (arquitetura, threat model, diagramas).  
+- `checklists/` – listas de verificação físicas e lógicas.  
+- `examples/` – cenários de uso e estudos de caso.  
+- `scripts/` – scripts simples para auditoria e automação.  
+- `incident-reports/` – modelos de relatórios de incidente.  
+- `playbooks/` – guias de resposta a incidentes.  
+- `dfir-analysis/` – análises forenses e fluxos de investigação.  
 
-### MITRE ATT&CK
-- Reconnaissance: Port scanning, SNMP sweep
-- Initial Access: SSH brute force
-- Persistence: Configurações não auditadas
-- Defense Evasion: Logs incompletos
-- Impact: Perda de enlace, degradação de SNR
-
-### STRIDE
-- Spoofing  
-- Tampering  
-- Repudiation  
-- Information Disclosure  
-- Denial of Service  
-- Elevation of Privilege  
+> A documentação avançada está em:  
+> **`docs/overview_advanced.md`**
 
 ---
 
-## Cenários Técnicos Avançados
+## 🚀 Getting Started
 
-### Degradação progressiva de enlace
-- SNR abaixo de 6 dB  
-- RSSI instável  
-- BER crescente  
-- Modem em fallback  
-- Perda total de comunicação  
+### 1. Navegando pelos documentos
+Comece por:
 
-### Intrusão física coordenada
-- Sensor de porta dispara  
-- Corte de energia  
-- Antena desalinhada  
-- Modem sem telemetria  
-- Torre isolada  
+- `docs/arquitetura_torres.md`  
+- `docs/modelo_ameaca.md`  
+- `checklists/checklist_torre_fisico.md`  
+- `checklists/checklist_torre_logico.md`  
 
-### Ataque lógico simultâneo
-- SSH brute force  
-- SNMP walk não autorizado  
-- Flood de pacotes  
-- Switch sobrecarregado  
-- Queda de VLAN crítica  
-
-Casos completos:
-- `incident-reports/caso_completo_end_to_end.md`
+Esses arquivos dão uma visão geral rápida.
 
 ---
 
-## Fluxo DFIR
+### 2. Rodando os scripts
 
-### Coleta
-- Logs do modem SAT  
-- Syslog do switch  
-- Telemetria histórica  
-- Registros ambientais  
+Scripts principais:
 
-### Correlacionamento
-- Sigma rules  
-- Eventos de horário indevido  
-- Queda de SNR + acesso físico  
-- SSH brute force + SNMP scan  
-
-### Análise
-- Linha do tempo  
-- Identificação de pivot  
-- Causa raiz  
-
-### Mitigação
-- Hardening de modem  
-- SNMP v3  
-- ACLs restritivas  
-- Proteção física reforçada  
-
----
-
-## Scripts Técnicos
-
-### Conversão ASCII + Inglês
-Gera versões limpas para sistemas embarcados e documentação internacional.
-
-### Criação de diagramas + READMEs
-Organiza automaticamente toda a documentação interna.
-
-### Pipeline completa
-Executa tudo em um único comando:
-
+#### 🔹 Converter arquivos para ASCII + inglês
+```powershell
+powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
