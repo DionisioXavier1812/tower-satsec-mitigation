@@ -1,59 +1,135 @@
-# Tower & Satellite Security Mitigation
+# Tower & Satellite Security Mitigation — Technical Advanced Overview
 
 [![Status](https://img.shields.io/badge/status-active-green)]()
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
 
-Projeto focado em **mapeamento e mitigação de vulnerabilidades** em torres de transmissão e enlaces satelitais.
-
-## Objetivos
-
-- Documentar riscos físicos e lógicos em infraestruturas críticas.
-- Oferecer checklists de avaliação de segurança.
-- Disponibilizar scripts simples para apoio à auditoria de serviços e portas.
-- Servir como base para estudos, provas de conceito e melhoria contínua.
-
-## Estrutura
-
-- `docs/` – documentação técnica (arquitetura, modelo de ameaça).
-- `checklists/` – listas de verificação para inspeção física e lógica.
-- `scripts/` – scripts em shell para apoio à análise básica.
-- `examples/` – cenários de uso e estudos de caso.
-
-## Roadmap
-
-- [x] Estrutura inicial do projeto
-- [x] Documentação básica de arquitetura
-- [x] Checklists físicos e lógicos
-- [x] Scripts de auditoria básica
-- [ ] Integração com ferramentas de monitoramento
-- [ ] Modelos avançados de ameaça
-- [ ] Casos de uso reais (ISPs, provedores regionais)
-
-## Releases
-
-- `v0.1.0` – Estrutura inicial, documentação básica, scripts simples.
-- `v0.2.0` – Ampliação de checklists e threat model.
-- `v0.3.0` – Integração com ferramentas externas (futuro).
+Documento técnico avançado sobre riscos, arquitetura, ameaças e processos de mitigação em torres de transmissão e enlaces satelitais.
 
 ---
 
-## English Version
+## Arquitetura Técnica
 
-This project focuses on **mapping and mitigating vulnerabilities** in transmission towers and satellite links.
+### Camada Física
+- Antenas (parabólicas, painéis setoriais)
+- Cabos coaxiais / waveguides
+- Estrutura da torre (altura, acesso, proteção perimetral)
+- Sensores ambientais (temperatura, vibração, porta)
 
-### Goals
+### Camada de Enlace Satelital
+- Modem SAT (SNR, RSSI, BER, telemetria)
+- Protocolos TDMA/SCPC
+- Downlink/Uplink
+- Estação terrestre (gateway)
 
-- Document physical and logical risks in critical infrastructure.
-- Provide security assessment checklists.
-- Offer simple scripts to support basic service and port auditing.
-- Serve as a foundation for studies, proof-of-concept, and continuous improvement.
+### Camada de Rede
+- Switches (VLAN, SNMP, STP)
+- Roteadores (ACL, BGP, OSPF)
+- Monitoramento (Syslog, Netflow)
+- Acesso remoto (SSH, VPN)
 
-### Structure
+### Camada de Monitoramento
+- NOC (operacional)
+- SOC (segurança)
+- Regras Sigma
+- Alertas correlacionados
 
-- `docs/` – technical documentation (architecture, threat model).
-- `checklists/` – verification lists for physical and logical inspection.
-- `scripts/` – shell scripts for basic analysis.
-- `examples/` – usage scenarios and case studies.
+Diagramas completos em:
+- `docs/diagrama_arquitetura_satelital.md`
+- `docs/diagrama_cadeia_comunicacao.md`
 
-> This project is **educational** and does not replace professional audits, regulatory standards, or formal technical reports.
+---
+
+## Threat Model Avançado
+
+### Superfície de Ataque
+- SSH exposto
+- SNMP público
+- Modem SAT sem hardening
+- Acesso físico à torre
+- Telemetria sem autenticação
+- Falhas ambientais
+
+### MITRE ATT&CK
+- Reconnaissance: Port scanning, SNMP sweep
+- Initial Access: SSH brute force
+- Persistence: Configurações não auditadas
+- Defense Evasion: Logs incompletos
+- Impact: Perda de enlace, degradação de SNR
+
+### STRIDE
+- Spoofing  
+- Tampering  
+- Repudiation  
+- Information Disclosure  
+- Denial of Service  
+- Elevation of Privilege  
+
+---
+
+## Cenários Técnicos Avançados
+
+### Degradação progressiva de enlace
+- SNR abaixo de 6 dB  
+- RSSI instável  
+- BER crescente  
+- Modem em fallback  
+- Perda total de comunicação  
+
+### Intrusão física coordenada
+- Sensor de porta dispara  
+- Corte de energia  
+- Antena desalinhada  
+- Modem sem telemetria  
+- Torre isolada  
+
+### Ataque lógico simultâneo
+- SSH brute force  
+- SNMP walk não autorizado  
+- Flood de pacotes  
+- Switch sobrecarregado  
+- Queda de VLAN crítica  
+
+Casos completos:
+- `incident-reports/caso_completo_end_to_end.md`
+
+---
+
+## Fluxo DFIR
+
+### Coleta
+- Logs do modem SAT  
+- Syslog do switch  
+- Telemetria histórica  
+- Registros ambientais  
+
+### Correlacionamento
+- Sigma rules  
+- Eventos de horário indevido  
+- Queda de SNR + acesso físico  
+- SSH brute force + SNMP scan  
+
+### Análise
+- Linha do tempo  
+- Identificação de pivot  
+- Causa raiz  
+
+### Mitigação
+- Hardening de modem  
+- SNMP v3  
+- ACLs restritivas  
+- Proteção física reforçada  
+
+---
+
+## Scripts Técnicos
+
+### Conversão ASCII + Inglês
+Gera versões limpas para sistemas embarcados e documentação internacional.
+
+### Criação de diagramas + READMEs
+Organiza automaticamente toda a documentação interna.
+
+### Pipeline completa
+Executa tudo em um único comando:
+
