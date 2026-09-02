@@ -1,7 +1,7 @@
 ﻿# Arquitetura de Enlaces Satelitais
 
 ## Componentes
-- Antena VSAT
+- Antenna VSAT
 - Modem satelital
 - Roteadores
 - Backhaul
@@ -10,6 +10,7 @@
 ## SuperfA??cie de Ataque
 - Acesso fA??sico
 - ConfiguraA??A??es inseguras
-- Falhas ambientais
+- Failures ambientais
+
 
 

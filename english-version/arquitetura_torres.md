@@ -17,3 +17,4 @@ Towers de transmissA??o podem ser usadas para telecom, Power e enlaces PTP.
 - Failures de Power
 
 
+

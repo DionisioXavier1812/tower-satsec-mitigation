@@ -1,6 +1,7 @@
-﻿# Checklist Torre FA??sica
+﻿# Checklist Tower FA??sica
 - PortA??es seguros
-- Antenas fixas
-- Energia protegida
+- Antennas fixas
+- Power protegida
+
 
 

@@ -1,19 +1,20 @@
-﻿# Arquitetura de Torres de TransmissA??o
+﻿# Arquitetura de Towers de TransmissA??o
 
 ## VisA??o Geral
-Torres de transmissA??o podem ser usadas para telecom, energia e enlaces PTP.
+Towers de transmissA??o podem ser usadas para telecom, Power e enlaces PTP.
 
 ## Componentes
 - Estrutura fA??sica
-- Antenas
+- Antennas
 - RA??dios
 - Switches
-- Energia
+- Power
 - Aterramento
 
 ## SuperfA??cie de Ataque
 - Acesso fA??sico
 - Sabotagem
-- Falhas de energia
+- Failures de Power
+
 
 

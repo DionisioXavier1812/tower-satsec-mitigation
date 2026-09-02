@@ -1,6 +1,7 @@
 ﻿# Checklist SatA??lite
-- Antena alinhada
+- Antenna alinhada
 - Modem seguro
 - Monitoramento ativo
+
 
 

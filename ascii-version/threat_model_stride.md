@@ -4,7 +4,7 @@
 
 # \## S a?????? Spoofing
 
-# \- Acesso indevido ao modem satelital.
+# \- Acesso indevido ao Modem satelital.
 
 # 
 
@@ -28,13 +28,14 @@
 
 # \## D a?????? Denial of Service
 
-# \- Corte de energia.
+# \- Corte de Power.
 
 # 
 
 # \## E a?????? Elevation of Privilege
 
 # \- Senhas padrA??o.
+
 
 
 
