@@ -2,7 +2,7 @@
 
 [![Status](https://img.shields.io/badge/status-active-green)]()
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
-[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
+[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]() 
 
 Este projeto reúne boas práticas, checklists e documentação essencial para segurança em torres de transmissão e enlaces satelitais.
 
