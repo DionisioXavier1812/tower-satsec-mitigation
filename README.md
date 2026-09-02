@@ -1,60 +1,53 @@
-﻿# Tower & Satellite Security Mitigation
+# Tower & Satellite Security Mitigation
 
 [![Status](https://img.shields.io/badge/status-active-green)]()
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
-[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
+[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]() 
 
-Projeto focado em **mapeamento e mitigaA§A£o de vulnerabilidades** em torres de transmissA£o e enlaces satelitais.
+Este projeto reúne boas práticas, checklists e documentação essencial para segurança em torres de transmissão e enlaces satelitais.
 
-## Objetivos
-
-- Documentar riscos fA­sicos e lA³gicos em infraestruturas crA­ticas.
-- Oferecer checklists de avaliaA§A£o de seguranA§a.
-- Disponibilizar scripts simples para apoio A  auditoria de serviA§os e portas.
-- Servir como base para estudos, provas de conceito e melhoria contA­nua.
-
-## Estrutura
-
-- docs/ a€“ documentaA§A£o tA©cnica (arquitetura, modelo de ameaA§a).
-- checklists/ a€“ listas de verificaA§A£o para inspeA§A£o fA­sica e lA³gica.
-- scripts/ a€“ scripts em shell para apoio A  anA¡lise bA¡sica.
-- examples/ a€“ cenA¡rios de uso e estudos de caso.
-
-## Roadmap
-
-- [x] Estrutura inicial do projeto
-- [x] DocumentaA§A£o bA¡sica de arquitetura
-- [x] Checklists fA­sicos e lA³gicos
-- [x] Scripts de auditoria bA¡sica
-- [ ] IntegraA§A£o com ferramentas de monitoramento
-- [ ] Modelos avanA§ados de ameaA§a
-- [ ] Casos de uso reais (ISPs, provedores regionais)
-
-## Releases
-
-- 0.1.0 a€“ Estrutura inicial, documentaA§A£o bA¡sica, scripts simples.
-- 0.2.0 a€“ AmpliaA§A£o de checklists e threat model.
-- 0.3.0 a€“ IntegraA§A£o com ferramentas externas (futuro).
+A proposta é ser simples, acessível e útil tanto para iniciantes quanto para profissionais de telecom e segurança.
 
 ---
 
-## English Version
+## 🎯 Objetivo do Projeto
 
-This project focuses on **mapping and mitigating vulnerabilities** in transmission towers and satellite links.
+- Mapear riscos físicos e lógicos em infraestruturas críticas.  
+- Fornecer checklists práticos para inspeção e auditoria.  
+- Disponibilizar scripts simples para análise básica.  
+- Servir como base de estudo e referência rápida.  
 
-### Goals
+---
 
-- Document physical and logical risks in critical infrastructure.
-- Provide security assessment checklists.
-- Offer simple scripts to support basic service and port auditing.
-- Serve as a foundation for studies, proof-of-concept, and continuous improvement.
+## 📁 Estrutura do Repositório
 
-### Structure
+- `docs/` – documentação técnica (arquitetura, threat model, diagramas).  
+- `checklists/` – listas de verificação físicas e lógicas.  
+- `examples/` – cenários de uso e estudos de caso.  
+- `scripts/` – scripts simples para auditoria e automação.  
+- `incident-reports/` – modelos de relatórios de incidente.  
+- `playbooks/` – guias de resposta a incidentes.  
+- `dfir-analysis/` – análises forenses e fluxos de investigação.  
 
-- docs/ a€“ technical documentation (architecture, threat model).
-- checklists/ a€“ verification lists for physical and logical inspection.
-- scripts/ a€“ shell scripts for basic analysis.
-- examples/ a€“ usage scenarios and case studies.
+> Documentação avançada está em:  
+> **`docs/overview_advanced.md`**
 
-> This project is **educational** and does not replace professional audits, regulatory standards, or formal technical reports.
+---
 
+## 🚀 Getting Started
+
+### 1. Navegando pelos documentos
+Comece por:
+
+- `docs/arquitetura_torres.md`  
+- `docs/modelo_ameaca.md`  
+- `checklists/checklist_torre_fisico.md`  
+- `checklists/checklist_torre_logico.md`  
+
+---
+
+### 2. Rodando os scripts
+
+#### Converter arquivos para ASCII + inglês
+```powershell
+powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
