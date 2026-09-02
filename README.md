@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
 
-Este projeto reúne **boas práticas, checklists e documentação essencial** para segurança em torres de transmissão e enlaces satelitais.
+Este projeto reúne boas práticas, checklists e documentação essencial para segurança em torres de transmissão e enlaces satelitais.
 
-A proposta é ser **simples, acessível e útil** tanto para iniciantes quanto para profissionais de telecom e segurança.
+A proposta é ser simples, acessível e útil tanto para iniciantes quanto para profissionais de telecom e segurança.
 
 ---
 
@@ -16,8 +16,6 @@ A proposta é ser **simples, acessível e útil** tanto para iniciantes quanto p
 - Fornecer checklists práticos para inspeção e auditoria.  
 - Disponibilizar scripts simples para análise básica.  
 - Servir como base de estudo e referência rápida.  
-
-Este repositório **não substitui auditorias profissionais**, mas ajuda a organizar conhecimento e padronizar processos.
 
 ---
 
@@ -31,7 +29,7 @@ Este repositório **não substitui auditorias profissionais**, mas ajuda a organ
 - `playbooks/` – guias de resposta a incidentes.  
 - `dfir-analysis/` – análises forenses e fluxos de investigação.  
 
-> A documentação avançada está em:  
+> Documentação avançada está em:  
 > **`docs/overview_advanced.md`**
 
 ---
@@ -46,14 +44,10 @@ Comece por:
 - `checklists/checklist_torre_fisico.md`  
 - `checklists/checklist_torre_logico.md`  
 
-Esses arquivos dão uma visão geral rápida.
-
 ---
 
 ### 2. Rodando os scripts
 
-Scripts principais:
-
-#### 🔹 Converter arquivos para ASCII + inglês
+#### Converter arquivos para ASCII + inglês
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
