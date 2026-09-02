@@ -1,0 +1,14 @@
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Python (se usar depois)
+__pycache__/
+*.pyc
