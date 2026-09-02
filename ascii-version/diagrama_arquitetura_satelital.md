@@ -1,14 +1,14 @@
-﻿# Arquitetura de Comunicacao Satelital (ASCII)
+﻿# Arquitetura de ComunicAction Satelital (ASCII)
 
                 +----------------------+
-                |      Satelite        |
+                |      Satellite        |
                 |   GEO / MEO / LEO    |
                 +----------+-----------+
                            |
                            | Downlink
                            |
                 +----------v-----------+
-                |      Antena          |
+                |      Antenna          |
                 +----------+-----------+
                            |
                            | Cabo Coaxial
@@ -28,4 +28,5 @@
                 +----------v-----------+
                 |      NOC / SOC       |
                 +----------------------+
+
 

@@ -1,4 +1,4 @@
-﻿# Fluxo de Ataque ???????? Torre/Satelite (ASCII)
+﻿# Fluxo de Ataque ???????? Tower/Satellite (ASCII)
 
 [Atacante]
     |
@@ -10,10 +10,11 @@
     v
 [Modem / Switch]
     |
-    | Falha ambiental
+    | Failure ambiental
     v
-[Degradacao do enlace]
+[DegradAction do enlace]
     |
     v
 [Impacto no provedor]
+
 

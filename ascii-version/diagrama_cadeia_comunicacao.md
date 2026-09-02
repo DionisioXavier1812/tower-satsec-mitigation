@@ -1,4 +1,4 @@
-﻿# Cadeia de Comunicacao Satelital (ASCII)
+﻿# Cadeia de ComunicAction Satelital (ASCII)
 
 [Cliente]
     |
@@ -8,11 +8,12 @@
     |
 [Modem SAT] ---> Telemetria ---> [NOC]
     |
-[Antena]
+[Antenna]
     |
-[Satelite]
+[Satellite]
     |
-[Estacao Terrestre]
+[EstAction Terrestre]
     |
 [Backbone]
+
 

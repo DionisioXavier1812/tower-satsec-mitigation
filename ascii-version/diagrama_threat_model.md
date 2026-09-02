@@ -1,18 +1,18 @@
-﻿# Threat Model ???????? Torre/Satelite
+﻿# Threat Model ???????? Tower/Satellite
 
 Superficie de Ataque
 --------------------
 - SSH
 - SNMP
 - Modem
-- Antena
-- Acesso fisico
+- Antenna
+- Physical access
 
 MITRE ATT&CK
 ------------
-- Recon: Port scanning
-- Initial Access: SSH brute force
-- Impact: Comunicacao degradada
+- Recon: Port Scanning
+- Initial Access: SSH Brute force
+- Impact: ComunicAction degradada
 
 STRIDE
 ------
@@ -22,4 +22,5 @@ R ???????? Repudiation
 I ???????? Information Disclosure  
 D ???????? Denial of Service  
 E ???????? Elevation of Privilege  
+
 

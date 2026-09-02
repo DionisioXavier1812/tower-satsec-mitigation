@@ -1,7 +1,12 @@
 # ============================================
 # Script: tudo_automatico.ps1
-# Objetivo: Converter ASCII+Ingles, criar diagramas/READMEs e fazer commit/push
+# Objetivo: Pipeline completa sem conflitos, sem merge, sem abrir editor
 # ============================================
+
+Write-Host "Atualizando repositório antes de tudo..." -ForegroundColor Cyan
+
+# Evita merge automático, evita abrir VIM, evita conflito
+git pull origin main --rebase
 
 Write-Host "Rodando conversao ASCII + Ingles..." -ForegroundColor Cyan
 powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
@@ -9,7 +14,7 @@ powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
 Write-Host "Criando diagramas e READMEs..." -ForegroundColor Cyan
 powershell -ExecutionPolicy Bypass -File .\montar_diagramas_readmes.ps1
 
-Write-Host "Iniciando commit automatico..." -ForegroundColor Cyan
+Write-Host "Preparando commit..." -ForegroundColor Cyan
 
 $pastas = @(
     "ascii-version",
@@ -40,7 +45,7 @@ foreach ($a in $arquivos) {
     }
 }
 
-git commit -m "Pipeline completa: ASCII+Ingles, diagramas, READMEs"
-git push
+git commit -m "Pipeline completa: ASCII+Ingles, diagramas, READMEs, rebase aplicado"
+git push origin main
 
-Write-Host "Pipeline completa executada com sucesso!" -ForegroundColor Green
+Write-Host "Pipeline completa executada com sucesso, sem conflitos!" -ForegroundColor Green
