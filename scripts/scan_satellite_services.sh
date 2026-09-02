@@ -1,2 +1,2 @@
 ﻿#!/usr/bin/env bash
-echo 'Scan bÃ¡sico'
+echo 'Scan satelital'

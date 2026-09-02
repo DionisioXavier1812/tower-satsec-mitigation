@@ -1,4 +1,4 @@
-# Logs
+﻿# Logs
 *.log
 
 # Sistema
@@ -9,6 +9,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Python (se usar depois)
+# Python
 __pycache__/
 *.pyc

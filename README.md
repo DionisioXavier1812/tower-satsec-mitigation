@@ -1,120 +1,59 @@
-\# Tower \& Satellite Security Mitigation
+﻿# Tower & Satellite Security Mitigation
 
+[![Status](https://img.shields.io/badge/status-active-green)]()
+[![License](https://img.shields.io/badge/license-MIT-blue)]()
+[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
 
+Projeto focado em **mapeamento e mitigaÃ§Ã£o de vulnerabilidades** em torres de transmissÃ£o e enlaces satelitais.
 
-\[!\[Status](https://img.shields.io/badge/status-active-green)]()
+## Objetivos
 
-\[!\[License](https://img.shields.io/badge/license-MIT-blue)]()
+- Documentar riscos fÃ­sicos e lÃ³gicos em infraestruturas crÃ­ticas.
+- Oferecer checklists de avaliaÃ§Ã£o de seguranÃ§a.
+- Disponibilizar scripts simples para apoio Ã  auditoria de serviÃ§os e portas.
+- Servir como base para estudos, provas de conceito e melhoria contÃ­nua.
 
-\[!\[Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
+## Estrutura
 
+- docs/ â€“ documentaÃ§Ã£o tÃ©cnica (arquitetura, modelo de ameaÃ§a).
+- checklists/ â€“ listas de verificaÃ§Ã£o para inspeÃ§Ã£o fÃ­sica e lÃ³gica.
+- scripts/ â€“ scripts em shell para apoio Ã  anÃ¡lise bÃ¡sica.
+- examples/ â€“ cenÃ¡rios de uso e estudos de caso.
 
+## Roadmap
 
-Projeto focado em \*\*mapeamento e mitigação de vulnerabilidades\*\* em torres de transmissão e enlaces satelitais.
+- [x] Estrutura inicial do projeto
+- [x] DocumentaÃ§Ã£o bÃ¡sica de arquitetura
+- [x] Checklists fÃ­sicos e lÃ³gicos
+- [x] Scripts de auditoria bÃ¡sica
+- [ ] IntegraÃ§Ã£o com ferramentas de monitoramento
+- [ ] Modelos avanÃ§ados de ameaÃ§a
+- [ ] Casos de uso reais (ISPs, provedores regionais)
 
+## Releases
 
+- 0.1.0 â€“ Estrutura inicial, documentaÃ§Ã£o bÃ¡sica, scripts simples.
+- 0.2.0 â€“ AmpliaÃ§Ã£o de checklists e threat model.
+- 0.3.0 â€“ IntegraÃ§Ã£o com ferramentas externas (futuro).
 
-\## Objetivos
+---
 
+## English Version
 
+This project focuses on **mapping and mitigating vulnerabilities** in transmission towers and satellite links.
 
-\- Documentar riscos físicos e lógicos em infraestruturas críticas.
+### Goals
 
-\- Oferecer checklists de avaliação de segurança.
+- Document physical and logical risks in critical infrastructure.
+- Provide security assessment checklists.
+- Offer simple scripts to support basic service and port auditing.
+- Serve as a foundation for studies, proof-of-concept, and continuous improvement.
 
-\- Disponibilizar scripts simples para apoio à auditoria de serviços e portas.
+### Structure
 
-\- Servir como base para estudos, provas de conceito e melhoria contínua.
+- docs/ â€“ technical documentation (architecture, threat model).
+- checklists/ â€“ verification lists for physical and logical inspection.
+- scripts/ â€“ shell scripts for basic analysis.
+- examples/ â€“ usage scenarios and case studies.
 
-
-
-\## Estrutura
-
-
-
-\- `docs/` – documentação técnica (arquitetura, modelo de ameaça).
-
-\- `checklists/` – listas de verificação para inspeção física e lógica.
-
-\- `scripts/` – scripts em shell para apoio à análise básica.
-
-\- `examples/` – cenários de uso e estudos de caso.
-
-
-
-\## Roadmap
-
-
-
-\- \[x] Estrutura inicial do projeto
-
-\- \[x] Documentação básica de arquitetura
-
-\- \[x] Checklists físicos e lógicos
-
-\- \[x] Scripts de auditoria básica
-
-\- \[ ] Integração com ferramentas de monitoramento
-
-\- \[ ] Modelos avançados de ameaça
-
-\- \[ ] Casos de uso reais (ISPs, provedores regionais)
-
-
-
-\## Releases
-
-
-
-\- `v0.1.0` – Estrutura inicial, documentação básica, scripts simples.
-
-\- `v0.2.0` – Ampliação de checklists e threat model.
-
-\- `v0.3.0` – Integração com ferramentas externas (futuro).
-
-
-
-\---
-
-
-
-\## English Version
-
-
-
-This project focuses on \*\*mapping and mitigating vulnerabilities\*\* in transmission towers and satellite links.
-
-
-
-\### Goals
-
-
-
-\- Document physical and logical risks in critical infrastructure.
-
-\- Provide security assessment checklists.
-
-\- Offer simple scripts to support basic service and port auditing.
-
-\- Serve as a foundation for studies, proof-of-concept, and continuous improvement.
-
-
-
-\### Structure
-
-
-
-\- `docs/` – technical documentation (architecture, threat model).
-
-\- `checklists/` – verification lists for physical and logical inspection.
-
-\- `scripts/` – shell scripts for basic analysis.
-
-\- `examples/` – usage scenarios and case studies.
-
-
-
-> This project is \*\*educational\*\* and does not replace professional audits, regulatory standards, or formal technical reports.
-
-
-
+> This project is **educational** and does not replace professional audits, regulatory standards, or formal technical reports.
