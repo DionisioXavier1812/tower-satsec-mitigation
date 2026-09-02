@@ -1,87 +1,59 @@
-<div align="center">
+# Tower & Satellite Security Mitigation
 
-# 🚀 Tower-SatSec Mitigation
+[![Status](https://img.shields.io/badge/status-active-green)]()
+[![License](https://img.shields.io/badge/license-MIT-blue)]()
+[![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
 
-### 🔧 Ferramentas Rápidas
+Projeto focado em **mapeamento e mitigação de vulnerabilidades** em torres de transmissão e enlaces satelitais.
 
-| Função | Botão |
-|-------|-------|
-| Gerar versões ASCII + Inglês | <kbd style="background:#4CAF50;color:white;padding:6px 12px;border-radius:6px;">converter_ascii_english_ultra.ps1</kbd> |
-| Criar diagramas + READMEs | <kbd style="background:#2196F3;color:white;padding:6px 12px;border-radius:6px;">montar_diagramas_readmes.ps1</kbd> |
-| Pipeline completa (1 comando) | <kbd style="background:#9C27B0;color:white;padding:6px 12px;border-radius:6px;">tudo_automatico.ps1</kbd> |
+## Objetivos
 
-</div>
+- Documentar riscos físicos e lógicos em infraestruturas críticas.
+- Oferecer checklists de avaliação de segurança.
+- Disponibilizar scripts simples para apoio à auditoria de serviços e portas.
+- Servir como base para estudos, provas de conceito e melhoria contínua.
 
----
+## Estrutura
 
-## 📡 Visão Geral
+- `docs/` – documentação técnica (arquitetura, modelo de ameaça).
+- `checklists/` – listas de verificação para inspeção física e lógica.
+- `scripts/` – scripts em shell para apoio à análise básica.
+- `examples/` – cenários de uso e estudos de caso.
 
-Este repositório reúne documentação, automações e modelos de segurança voltados para ambientes de telecom:
+## Roadmap
 
-- Torres de transmissão  
-- Enlaces satelitais  
-- Modems SAT  
-- Switches e roteadores  
-- NOC/SOC  
-- Fluxos de auditoria  
-- Playbooks de resposta  
-- Relatórios de incidente  
-- Análises DFIR  
+- [x] Estrutura inicial do projeto
+- [x] Documentação básica de arquitetura
+- [x] Checklists físicos e lógicos
+- [x] Scripts de auditoria básica
+- [ ] Integração com ferramentas de monitoramento
+- [ ] Modelos avançados de ameaça
+- [ ] Casos de uso reais (ISPs, provedores regionais)
 
----
+## Releases
 
-## 🛰️ Arquitetura
-
-Diagramas ASCII completos:
-
-- `docs/diagrama_arquitetura_satelital.md`
-- `docs/diagrama_cadeia_comunicacao.md`
-
-Eles representam:
-
-- Satélite → Antena → Modem SAT → Switch → Rede local → NOC/SOC  
-- Cadeia de telemetria  
-- Fluxo de comunicação bidirecional  
-- Pontos de falha e superfícies de ataque  
+- `v0.1.0` – Estrutura inicial, documentação básica, scripts simples.
+- `v0.2.0` – Ampliação de checklists e threat model.
+- `v0.3.0` – Integração com ferramentas externas (futuro).
 
 ---
 
-## 🔥 Fluxo de Auditoria
+## English Version
 
-O projeto segue um fluxo de auditoria contínuo:
+This project focuses on **mapping and mitigating vulnerabilities** in transmission towers and satellite links.
 
-1. Coleta de logs (modem, switch, sensores físicos)  
-2. Correlação (Sigma, SNMP, SSH, eventos ambientais)  
-3. Auditoria de configuração  
-4. Identificação de gaps  
-5. Relatórios de incidente  
+### Goals
 
-Fluxos detalhados em:
+- Document physical and logical risks in critical infrastructure.
+- Provide security assessment checklists.
+- Offer simple scripts to support basic service and port auditing.
+- Serve as a foundation for studies, proof-of-concept, and continuous improvement.
 
-- `docs/fluxos_ataque.md`
-- `examples/fluxo_investigacao.md`
+### Structure
 
----
+- `docs/` – technical documentation (architecture, threat model).
+- `checklists/` – verification lists for physical and logical inspection.
+- `scripts/` – shell scripts for basic analysis.
+- `examples/` – usage scenarios and case studies.
 
-## ⚠️ Cenários Reais
-
-Modelos incluídos:
-
-- Perda de enlace por temperatura  
-- Intrusão física em torre  
-- Ataque lógico via SSH/SNMP  
-- Sabotagem de energia  
-- Degradação progressiva de SNR  
-
-Casos completos:
-
-- `incident-reports/caso_completo_end_to_end.md`
-
----
-
-## 🧰 Scripts – Como usar
-
-### 🔹 1. Converter ASCII + Inglês
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
+> This project is **educational** and does not replace professional audits, regulatory standards, or formal technical reports.
