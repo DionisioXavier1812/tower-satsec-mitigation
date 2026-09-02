@@ -1,6 +1,7 @@
-﻿# MITRE ATT&CK â€“ Infra CrÃ­tica
+﻿# MITRE ATT&CK a€“ Infra CrA­tica
 
-## TÃ©cnicas
-- T1595 â€“ Active Scanning
-- T1046 â€“ Network Service Scanning
-- T1190 â€“ Exploit Public-Facing Application
+## TA©cnicas
+- T1595 a€“ Active Scanning
+- T1046 a€“ Network Service Scanning
+- T1190 a€“ Exploit Public-Facing Application
+

@@ -1,8 +1,19 @@
-﻿# Caso Completo â€“ Incidente Torre/SatÃ©lite (End-to-End)
+﻿# \# Caso Completo – Incidente Torre/Satelite (End-to-End)
 
-1. Alerta inicial
-2. Triagem
-3. InvestigaÃ§Ã£o
-4. AÃ§Ã£o
-5. RelatÃ³rio executivo
-6. RecomendaÃ§Ãµes
+# 
+
+# 1\. Alerta inicial  
+
+# 2\. Triagem  
+
+# 3\. Investigacao  
+
+# 4\. Acao  
+
+# 5\. Relatorio executivo  
+
+# 6\. Recomendacoes  
+
+
+
+

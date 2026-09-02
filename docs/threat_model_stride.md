@@ -1,40 +1,41 @@
-# \# Threat Model – STRIDE
+﻿# \# Threat Model a€“ STRIDE
 
 # 
 
-# \## S – Spoofing
+# \## S a€“ Spoofing
 
 # \- Acesso indevido ao modem satelital.
 
 # 
 
-# \## T – Tampering
+# \## T a€“ Tampering
 
-# \- Alteração de parâmetros de enlace.
+# \- AlteraA§A£o de parA¢metros de enlace.
 
 # 
 
-# \## R – Repudiation
+# \## R a€“ Repudiation
 
 # \- Falta de logs adequados.
 
 # 
 
-# \## I – Information Disclosure
+# \## I a€“ Information Disclosure
 
 # \- SNMP inseguro.
 
 # 
 
-# \## D – Denial of Service
+# \## D a€“ Denial of Service
 
 # \- Corte de energia.
 
 # 
 
-# \## E – Elevation of Privilege
+# \## E a€“ Elevation of Privilege
 
-# \- Senhas padrão.
+# \- Senhas padrA£o.
+
 
 
 

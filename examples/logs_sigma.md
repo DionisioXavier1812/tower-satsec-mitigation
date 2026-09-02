@@ -1,4 +1,4 @@
-﻿# Exemplos de Logs Sigma (DetecÃ§Ãµes)
+﻿# Exemplos de Logs Sigma (DetecA§Aµes)
 
 ## Regra: SSH Brute Force
 detection:
@@ -7,7 +7,7 @@ detection:
     Status: failed
   condition: selection
 
-## Regra: Acesso fÃ­sico fora do horÃ¡rio
+## Regra: Acesso fA­sico fora do horA¡rio
 detection:
   selection:
     DoorEvent: opened
@@ -20,3 +20,4 @@ detection:
     LogType: sat_modem
     Message: ""*no response*""
   condition: selection
+

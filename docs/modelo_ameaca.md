@@ -1,11 +1,12 @@
-﻿# Modelo de AmeaÃ§a
+﻿# Modelo de AmeaA§a
 
 ## Atores
-- Intrusos fÃ­sicos
+- Intrusos fA­sicos
 - Atacantes de rede
-- FuncionÃ¡rios negligentes
+- FuncionA¡rios negligentes
 
 ## Vetores
 - Portas abertas
 - Senhas fracas
-- Falta de segmentaÃ§Ã£o
+- Falta de segmentaA§A£o
+

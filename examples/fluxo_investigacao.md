@@ -1,8 +1,9 @@
-﻿# Fluxo de InvestigaÃ§Ã£o â€“ Torre/SatÃ©lite
+﻿# Fluxo de InvestigaA§A£o a€“ Torre/SatA©lite
 
 1. Alerta inicial
 2. Triagem
-3. Coleta de evidÃªncias
-4. AnÃ¡lise
-5. AÃ§Ã£o
-6. RelatÃ³rio
+3. Coleta de evidAªncias
+4. AnA¡lise
+5. AA§A£o
+6. RelatA³rio
+

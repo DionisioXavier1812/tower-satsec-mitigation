@@ -4,37 +4,37 @@
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![Security](https://img.shields.io/badge/focus-security-critical%20infra-red)]()
 
-Projeto focado em **mapeamento e mitigaÃ§Ã£o de vulnerabilidades** em torres de transmissÃ£o e enlaces satelitais.
+Projeto focado em **mapeamento e mitigaA§A£o de vulnerabilidades** em torres de transmissA£o e enlaces satelitais.
 
 ## Objetivos
 
-- Documentar riscos fÃ­sicos e lÃ³gicos em infraestruturas crÃ­ticas.
-- Oferecer checklists de avaliaÃ§Ã£o de seguranÃ§a.
-- Disponibilizar scripts simples para apoio Ã  auditoria de serviÃ§os e portas.
-- Servir como base para estudos, provas de conceito e melhoria contÃ­nua.
+- Documentar riscos fA­sicos e lA³gicos em infraestruturas crA­ticas.
+- Oferecer checklists de avaliaA§A£o de seguranA§a.
+- Disponibilizar scripts simples para apoio A  auditoria de serviA§os e portas.
+- Servir como base para estudos, provas de conceito e melhoria contA­nua.
 
 ## Estrutura
 
-- docs/ â€“ documentaÃ§Ã£o tÃ©cnica (arquitetura, modelo de ameaÃ§a).
-- checklists/ â€“ listas de verificaÃ§Ã£o para inspeÃ§Ã£o fÃ­sica e lÃ³gica.
-- scripts/ â€“ scripts em shell para apoio Ã  anÃ¡lise bÃ¡sica.
-- examples/ â€“ cenÃ¡rios de uso e estudos de caso.
+- docs/ a€“ documentaA§A£o tA©cnica (arquitetura, modelo de ameaA§a).
+- checklists/ a€“ listas de verificaA§A£o para inspeA§A£o fA­sica e lA³gica.
+- scripts/ a€“ scripts em shell para apoio A  anA¡lise bA¡sica.
+- examples/ a€“ cenA¡rios de uso e estudos de caso.
 
 ## Roadmap
 
 - [x] Estrutura inicial do projeto
-- [x] DocumentaÃ§Ã£o bÃ¡sica de arquitetura
-- [x] Checklists fÃ­sicos e lÃ³gicos
-- [x] Scripts de auditoria bÃ¡sica
-- [ ] IntegraÃ§Ã£o com ferramentas de monitoramento
-- [ ] Modelos avanÃ§ados de ameaÃ§a
+- [x] DocumentaA§A£o bA¡sica de arquitetura
+- [x] Checklists fA­sicos e lA³gicos
+- [x] Scripts de auditoria bA¡sica
+- [ ] IntegraA§A£o com ferramentas de monitoramento
+- [ ] Modelos avanA§ados de ameaA§a
 - [ ] Casos de uso reais (ISPs, provedores regionais)
 
 ## Releases
 
-- 0.1.0 â€“ Estrutura inicial, documentaÃ§Ã£o bÃ¡sica, scripts simples.
-- 0.2.0 â€“ AmpliaÃ§Ã£o de checklists e threat model.
-- 0.3.0 â€“ IntegraÃ§Ã£o com ferramentas externas (futuro).
+- 0.1.0 a€“ Estrutura inicial, documentaA§A£o bA¡sica, scripts simples.
+- 0.2.0 a€“ AmpliaA§A£o de checklists e threat model.
+- 0.3.0 a€“ IntegraA§A£o com ferramentas externas (futuro).
 
 ---
 
@@ -51,9 +51,10 @@ This project focuses on **mapping and mitigating vulnerabilities** in transmissi
 
 ### Structure
 
-- docs/ â€“ technical documentation (architecture, threat model).
-- checklists/ â€“ verification lists for physical and logical inspection.
-- scripts/ â€“ shell scripts for basic analysis.
-- examples/ â€“ usage scenarios and case studies.
+- docs/ a€“ technical documentation (architecture, threat model).
+- checklists/ a€“ verification lists for physical and logical inspection.
+- scripts/ a€“ shell scripts for basic analysis.
+- examples/ a€“ usage scenarios and case studies.
 
 > This project is **educational** and does not replace professional audits, regulatory standards, or formal technical reports.
+

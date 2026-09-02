@@ -7,7 +7,8 @@
 - Backhaul
 - Monitoramento
 
-## SuperfÃ­cie de Ataque
-- Acesso fÃ­sico
-- ConfiguraÃ§Ãµes inseguras
+## SuperfA­cie de Ataque
+- Acesso fA­sico
+- ConfiguraA§Aµes inseguras
 - Falhas ambientais
+

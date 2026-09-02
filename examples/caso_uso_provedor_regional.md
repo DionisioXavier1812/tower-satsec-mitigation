@@ -1,4 +1,4 @@
-\# Caso de Uso – Provedor Regional de Internet
+﻿\# Caso de Uso a€“ Provedor Regional de Internet
 
 
 
@@ -8,9 +8,9 @@
 
 Um provedor regional utiliza:
 
-\- torres de transmissão para enlaces ponto-a-ponto,
+\- torres de transmissA£o para enlaces ponto-a-ponto,
 
-\- enlaces satelitais como backup em áreas remotas.
+\- enlaces satelitais como backup em A¡reas remotas.
 
 
 
@@ -18,39 +18,40 @@ Um provedor regional utiliza:
 
 
 
-\- Falta de controle de acesso físico às torres.
+\- Falta de controle de acesso fA­sico A s torres.
 
-\- Equipamentos de rede com senhas padrão.
+\- Equipamentos de rede com senhas padrA£o.
 
-\- Ausência de monitoramento centralizado.
+\- AusAªncia de monitoramento centralizado.
 
-\- Dependência de um único enlace em áreas críticas.
-
-
-
-\## Aplicação do Projeto
+\- DependAªncia de um Aºnico enlace em A¡reas crA­ticas.
 
 
 
-\- Uso dos \*\*checklists\*\* para inspeção física e lógica.
-
-\- Uso dos \*\*scripts\*\* para verificação básica de portas e serviços.
-
-\- Uso do \*\*modelo de ameaça\*\* para priorizar ações.
-
-\- Documentação em `docs/` para orientar melhorias de arquitetura.
+\## AplicaA§A£o do Projeto
 
 
 
-\## Benefícios
+\- Uso dos \*\*checklists\*\* para inspeA§A£o fA­sica e lA³gica.
+
+\- Uso dos \*\*scripts\*\* para verificaA§A£o bA¡sica de portas e serviA§os.
+
+\- Uso do \*\*modelo de ameaA§a\*\* para priorizar aA§Aµes.
+
+\- DocumentaA§A£o em `docs/` para orientar melhorias de arquitetura.
 
 
 
-\- Redução de risco de interrupção de serviço.
+\## BenefA­cios
 
-\- Melhoria da postura de segurança física e lógica.
+
+
+\- ReduA§A£o de risco de interrupA§A£o de serviA§o.
+
+\- Melhoria da postura de seguranA§a fA­sica e lA³gica.
 
 \- Base para futuras auditorias profissionais.
+
 
 
 

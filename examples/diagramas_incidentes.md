@@ -1,13 +1,14 @@
-﻿# Diagramas ASCII â€“ Incidentes
+﻿# Diagramas ASCII a€“ Incidentes
 
 ## 1. Perda de Enlace Satelital
-[Modem] ---X--- [Antena] ----> [SatÃ©lite]
+[Modem] ---X--- [Antena] ----> [SatA©lite]
            ^
            |
          Falha
 
-## 2. IntrusÃ£o FÃ­sica
-[PortÃ£o] --> [Sensor] --> [Alerta] --> [Dashboard]
+## 2. IntrusA£o FA­sica
+[PortA£o] --> [Sensor] --> [Alerta] --> [Dashboard]
 
 ## 3. Sabotagem de Energia
-[Quadro ElÃ©trico] --X--> [Modem] --> [Perda Total]
+[Quadro ElA©trico] --X--> [Modem] --> [Perda Total]
+

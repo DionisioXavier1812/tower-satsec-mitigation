@@ -1,2 +1,3 @@
-﻿# SimulaÃ§Ã£o de Incidente Satelital
-Sintomas: alta latÃªncia, perda de pacotes.
+﻿# SimulaA§A£o de Incidente Satelital
+Sintomas: alta latAªncia, perda de pacotes.
+

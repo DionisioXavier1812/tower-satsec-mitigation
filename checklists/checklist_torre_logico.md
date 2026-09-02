@@ -1,4 +1,5 @@
-﻿# Checklist Torre LÃ³gica
+﻿# Checklist Torre LA³gica
 - Senhas fortes
 - Portas fechadas
 - Logs ativos
+

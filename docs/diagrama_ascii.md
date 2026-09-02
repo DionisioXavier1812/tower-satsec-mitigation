@@ -1,10 +1,11 @@
 ﻿# Diagrama ASCII
 
         +----------------------+
-        |   Torre de RÃ¡dio     |
+        |   Torre de RA¡dio     |
         +----------+-----------+
                    |
                    |
         +----------v-----------+
-        |   EstaÃ§Ã£o Terrena    |
+        |   EstaA§A£o Terrena    |
         +----------------------+
+

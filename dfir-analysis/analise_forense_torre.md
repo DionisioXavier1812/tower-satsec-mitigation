@@ -1,6 +1,7 @@
-﻿# AnÃ¡lise Forense â€“ Torre de TransmissÃ£o
+﻿# AnA¡lise Forense a€“ Torre de TransmissA£o
 
 - Coleta
-- PreservaÃ§Ã£o
-- AnÃ¡lise
-- ConclusÃ£o
+- PreservaA§A£o
+- AnA¡lise
+- ConclusA£o
+

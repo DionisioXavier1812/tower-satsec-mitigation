@@ -1,5 +1,6 @@
 ﻿# Fluxos de Ataque
 
-1. Ataque fÃ­sico
-2. Ataque lÃ³gico
+1. Ataque fA­sico
+2. Ataque lA³gico
 3. Ataque ambiental
+
