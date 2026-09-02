@@ -1,101 +1,65 @@
-# Tower-SatSec Mitigation
+Tower & Satellite Security Mitigation
+Projeto focado em mapeamento e mitigação de vulnerabilidades em torres de transmissão e enlaces satelitais.
 
-Projeto focado em seguranca, monitoramento e resposta a incidentes em ambientes de telecom com torres de transmissao e enlaces satelitais.
+Objetivos
+Documentar riscos físicos e lógicos em infraestruturas críticas.
 
-Ele combina:
+Oferecer checklists de avaliação de segurança.
 
-- Documentacao tecnica (arquitetura, threat model, fluxos)
-- Checklists operacionais
-- Playbooks de resposta
-- Relatorios de incidente
-- Analise DFIR
-- Automacao via scripts PowerShell
+Disponibilizar scripts simples para apoio à auditoria de serviços e portas.
 
----
+Servir como base para estudos, provas de conceito e melhoria contínua.
 
-## Arquitetura – Visao Geral
+Estrutura
+docs/ – documentação técnica (arquitetura, modelo de ameaça).
 
-A arquitetura alvo e composta por:
+checklists/ – listas de verificação para inspeção física e lógica.
 
-- **Torres de transmissao** (infraestrutura fisica, energia, acesso fisico)
-- **Enlaces satelitais** (modem SAT, antena, satelite, estacao terrestre)
-- **Rede local** (switch, roteador, VLAN, SNMP, SSH)
-- **NOC/SOC** (monitoramento, alertas, Sigma, resposta a incidentes)
+scripts/ – scripts em shell para apoio à análise básica.
 
-Diagrama ASCII detalhado em:
+examples/ – cenários de uso e estudos de caso.
 
-- `docs/diagrama_arquitetura_satelital.md`
-- `docs/diagrama_cadeia_comunicacao.md`
+Roadmap
+Estrutura inicial do projeto
 
----
+Documentação básica de arquitetura
 
-## Fluxo de auditoria e monitoramento
+Checklists físicos e lógicos
 
-O projeto assume um fluxo de auditoria continuo, incluindo:
+Scripts de auditoria básica
 
-1. **Coleta de logs**
-   - Modem SAT (SNR, RSSI, temperatura, status de enlace)
-   - Switch/roteador (SNMP, SSH, eventos de porta)
-   - Sensores fisicos (acesso a torre, portao, energia)
+Integração com ferramentas de monitoramento
 
-2. **Correlacao de eventos**
-   - Regras Sigma (SSH brute force, SNMP scan, modem sem resposta)
-   - Alertas de horario indevido (acesso fisico fora da janela permitida)
-   - Degradacao de enlace (queda de SNR, perda de pacotes)
+Modelos avançados de ameaça
 
-3. **Auditoria**
-   - Revisao periodica de configuracoes (SNMP, SSH, senhas, chaves)
-   - Validacao de trilhas de auditoria (logs completos, timestamps, integridade)
-   - Gaps identificados documentados em relatorios de incidente
+Casos de uso reais (ISPs, provedores regionais)
 
-Fluxos exemplificados em:
+Releases
+0.1.0 – Estrutura inicial, documentação básica, scripts simples.
 
-- `docs/fluxos_ataque.md`
-- `examples/fluxo_investigacao.md`
+0.2.0 – Ampliação de checklists e threat model.
 
----
+0.3.0 – Integração com ferramentas externas (futuro).
 
-## Cenarios reais – Exemplos
+English Version
+This project focuses on mapping and mitigating vulnerabilities in transmission towers and satellite links.
 
-Alguns cenarios modelados no projeto:
+Goals
+Document physical and logical risks in critical infrastructure.
 
-- **Perda de enlace satelital por falha ambiental**
-  - Temperatura elevada no modem
-  - Degradacao progressiva de SNR
-  - Perda total de comunicacao
-  - Playbook: `playbooks/playbook_perda_enlace.md`
-  - Relatorio: `incident-reports/caso_completo_end_to_end.md`
+Provide security assessment checklists.
 
-- **Intrusao fisica em torre**
-  - Sensor de portao dispara fora do horario
-  - Log de acesso fisico sem autorizacao
-  - Possivel sabotagem de energia
-  - Diagramas: `examples/diagramas_incidentes.md`
+Offer simple scripts to support basic service and port auditing.
 
-- **Ataque logico via SSH/SNMP**
-  - Scan de portas
-  - Tentativas de brute force em SSH
-  - SNMP aberto com comunidade fraca
-  - Sigma: `examples/logs_sigma.md`, `sigma-events/alertas_sigma.md`
+Serve as a foundation for studies, proof-of-concept, and continuous improvement.
 
----
+Structure
+docs/ – technical documentation (architecture, threat model).
 
-## Scripts – Como usar
+checklists/ – verification lists for physical and logical inspection.
 
-O projeto inclui uma pequena “pipeline” em PowerShell para automatizar tarefas:
+scripts/ – shell scripts for basic analysis.
 
-### 1. Conversao para ASCII + Ingles
+examples/ – usage scenarios and case studies.
 
-Script:
-
-- `converter_ascii_english_ultra.ps1`
-
-Funcao:
-
-- Cria versoes sem acentos (ASCII) dos arquivos `.md`
-- Cria versoes em ingles em `english-version/`
-
-Uso:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\converter_ascii_english_ultra.ps1
+This project is educational and does not replace professional audits, regulatory standards, or formal technical reports.
