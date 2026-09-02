@@ -29,8 +29,17 @@ A proposta é ser simples, acessível e útil tanto para iniciantes quanto para 
 - `playbooks/` – guias de resposta a incidentes.  
 - `dfir-analysis/` – análises forenses e fluxos de investigação.  
 
-> Documentação avançada está em:  
-> **`docs/overview_advanced.md`**
+---
+
+## 📚 Documentação Avançada
+
+Para detalhes técnicos completos (arquitetura, threat model, DFIR, cenários avançados):
+
+👉 **Acesse a documentação avançada:**  
+**[`docs/overview_advanced.md`](docs/overview_advanced.md)**
+
+Essa seção contém tudo o que é mais profundo, técnico e detalhado — separado do README para manter o projeto leve e acessível.
+
 
 ---
 
